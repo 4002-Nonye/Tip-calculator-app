@@ -25,13 +25,11 @@
 }
 
 body {
-	max-width: 100vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
+	max-width: 1440px;
+	margin: auto;
 	background: var(--light-grayish-cyan);
 	width: 60%;
+	margin-bottom: 5rem;
 }
 main {
 }
@@ -55,7 +53,7 @@ p {
 	border-radius: 0.9rem;
 	padding: 2rem;
 	margin-top: 0rem;
-	/*width: 100%;*/
+	width: 100%;
 }
 .top {
 	display: flex;
@@ -184,7 +182,7 @@ span {
 .svg {
 	height: 25px;
 	padding-right: 0.3rem;
-	margin-top: 0.4rem;
+	margin-top: 0.6rem;
 }
 /*STYLING THE RESET BUTTON*/
 .reset {
