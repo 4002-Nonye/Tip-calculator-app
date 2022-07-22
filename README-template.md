@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com](https://www.frontendmentor.io/solutions/tip-calculator-built-with-html-vanilla-css-and-javascript-YAgdZGkQhI)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/tip-calculator-built-with-html-vanilla-css-and-javascript-YAgdZGkQhI)
 - Live Site URL: [LIVE SITE URL](https://4002-nonye.github.io/Tip-calculator-app/)
 
 ## My process
