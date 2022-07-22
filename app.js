@@ -11,6 +11,10 @@ const err = document.querySelector('.err');
 const borderError = document.querySelector('.people__total');
 const reset = document.querySelector('.reset');
 const totalTip = document.querySelector('.total__tip');
+const topErr = () => {
+	err2.classList.add('hidden');
+	err2.classList.remove('apply__shake');
+};
 const errRemove = function () {
 	err.classList.add('hidden');
 	borderError.classList.remove('hide');
@@ -76,8 +80,7 @@ const calcTip = () => {
 						((+innerBtn.slice(0, -1) / 100) * amount.value) /
 						+peopleTotal.value;
 					tipValue.innerHTML = outPut.toFixed(2);
-					err2.classList.add('hidden');
-					err2.classList.remove('apply__shake');
+					topErr();
 
 					calc();
 				}
@@ -101,6 +104,7 @@ const resetMe = () => {
 	reset.addEventListener('click', () => {
 		setTimeout(() => {
 			resetSetting();
+			topErr();
 		}, 1000);
 	});
 };
