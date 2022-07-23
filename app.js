@@ -19,13 +19,13 @@ const addTopErr = () => {
 	err2.classList.remove('hidden');
 	err2.classList.add('apply__shake');
 };
-const errRemove = function () {
+const errRemove = () => {
 	err.classList.add('hidden');
 	borderError.classList.remove('hide');
 	err.classList.remove('apply__shake');
 	borderError.classList.remove('apply__shake');
 };
-const customCalc = function () {
+const customCalc = () => {
 	if (
 		+tipAmount.value > 0 &&
 		+tipAmount.value <= 100 &&
@@ -37,7 +37,7 @@ const customCalc = function () {
 	const total2 = +amount.value / +peopleTotal.value + +tipValue.innerHTML;
 	totalTip.innerHTML = total2.toFixed(2);
 };
-const defaultSetting = function () {
+const defaultSetting = () => {
 	amount.value = '';
 	peopleTotal.value = '';
 	tipValue.innerHTML = '00.00';
@@ -52,13 +52,12 @@ const defaultSetting = function () {
 	}, 3000);
 };
 
-const resetSetting = function () {
+const resetSetting = () => {
 	defaultSetting();
-
 	errRemove();
 };
 
-const calc = function () {
+const calc = () => {
 	if (peopleTotal.value === 0 || !peopleTotal.value) {
 		defaultSetting();
 	} else {
