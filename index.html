@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script defer src="app.js"></script>
+
+		<title>Frontend Mentor | Tip calculator app</title>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo.svg" alt="logo" class="head__logo" />
+		</header>
+		<main>
+			<div class="container">
+				<div class="con">
+					<div>
+						<div class="top">
+							<p>Bill</p>
+							<span class="err2 hidden"
+								>only 7 digits or less</span
+							>
+						</div>
+						<div class="amount">
+							<img src="images/icon-dollar.svg" alt="icon" />
+							<input
+								type="number"
+								name="amount"
+								placeholder="00.00"
+								class="input__amount"
+							/>
+						</div>
+					</div>
+					<div>
+						<p class="select">Select tip %</p>
+					</div>
+					<div class="tip__percent">
+						<button class="btn__percent">5%</button>
+						<button class="btn__percent">10%</button>
+						<button class="btn__percent">15%</button>
+						<button class="btn__percent">25%</button>
+						<button class="btn__percent">50%</button>
+						<input
+							type="number"
+							placeholder="custom"
+							name="Camount"
+							class="custom"
+							max="100"
+							min="1"
+						/>
+					</div>
+					<div class="total__people-container">
+						<div class="err__head">
+							<p>Number of People</p>
+							<span class="err hidden">can't be zero</span>
+						</div>
+						<div class="people__total">
+							<img
+								src="images/icon-person.svg"
+								alt="person"
+								class="person__img"
+							/>
+							<input
+								type="number"
+								name="tpeople"
+								placeholder="0"
+								class="people__total-input"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					<div class="total1">
+						<div class="total2">
+							<p class="p">Tip Amount</p>
+							<span>/person</span>
+						</div>
+						<div class="dollar">
+							<span
+								><img
+									src="images/icon-dollar-edit.svg"
+									class="svg"
+									alt="icon"
+							/></span>
+							<p class="tip__value tip">00.00</p>
+						</div>
+					</div>
+					<div class="total1 btm">
+						<div class="total2">
+							<p class="p">Total</p>
+							<span>/person</span>
+						</div>
+						<div class="dollar">
+							<span
+								><img
+									src="images/icon-dollar-edit.svg"
+									class="svg"
+									alt="icon"
+							/></span>
+							<p class="total__tip tip">00.00</p>
+						</div>
+					</div>
+					<button class="reset">Reset</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://github.com/4002-Nonye" target="_blank">Nonye</a
+				>.
+			</div>
+		</footer>
+	</body>
+</html>
