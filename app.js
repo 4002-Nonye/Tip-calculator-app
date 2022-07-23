@@ -97,6 +97,7 @@ const calcTip = () => {
 			amount.focus();
 		} else {
 			if (amount.value.length < 7) {
+				topErr();
 				calc();
 				customCalc();
 			} else {
