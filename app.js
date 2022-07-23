@@ -61,7 +61,7 @@ const calc = () => {
 	if (peopleTotal.value === 0 || !peopleTotal.value) {
 		defaultSetting();
 	} else {
-		if (amount.value.length < 7)
+		if (amount.value.length <= 7)
 			total = +amount.value / peopleTotal.value + +tipValue.innerHTML;
 		totalTip.innerHTML = total.toFixed(2);
 	}
