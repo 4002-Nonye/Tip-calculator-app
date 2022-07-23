@@ -38,11 +38,8 @@ const customCalc = () => {
 	totalTip.innerHTML = total2.toFixed(2);
 };
 const defaultSetting = () => {
-	amount.value = '';
-	peopleTotal.value = '';
-	tipValue.innerHTML = '00.00';
-	totalTip.innerHTML = '00.00';
-	tipAmount.value = '';
+	peopleTotal.value = amount.value = tipAmount.value = '';
+	tipValue.innerHTML = totalTip.innerHTML = '00.00';
 	borderError.classList.add('apply__shake');
 	err.classList.add('apply__shake');
 	err.classList.remove('hidden');
