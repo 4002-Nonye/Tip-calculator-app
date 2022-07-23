@@ -15,6 +15,10 @@ const topErr = () => {
 	err2.classList.add('hidden');
 	err2.classList.remove('apply__shake');
 };
+const addTopErr = () => {
+	err2.classList.remove('hidden');
+	err2.classList.add('apply__shake');
+};
 const errRemove = function () {
 	err.classList.add('hidden');
 	borderError.classList.remove('hide');
@@ -71,8 +75,7 @@ const calcTip = () => {
 				defaultSetting();
 			} else {
 				if (amount.value.length > 7 || amount.value === 0) {
-					err2.classList.remove('hidden');
-					err2.classList.add('apply__shake');
+					addTopErr();
 				} else {
 					errRemove();
 					let innerBtn = e.target.innerHTML;
@@ -87,6 +90,7 @@ const calcTip = () => {
 			}
 		});
 	});
+
 	tipAmount.addEventListener('input', () => {
 		if (+peopleTotal.value === 0) {
 			defaultSetting();
@@ -95,6 +99,8 @@ const calcTip = () => {
 			if (amount.value.length < 7) {
 				calc();
 				customCalc();
+			} else {
+				addTopErr();
 			}
 		}
 	});
