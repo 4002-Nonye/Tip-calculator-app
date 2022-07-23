@@ -29,7 +29,7 @@ const customCalc = () => {
 	if (
 		+tipAmount.value > 0 &&
 		+tipAmount.value <= 100 &&
-		amount.value.length < 7
+		amount.value.length <= 7
 	)
 		outPut2 =
 			((+tipAmount.value / 100) * amount.value) / +peopleTotal.value;
